@@ -1,0 +1,151 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+  }
+  .space{
+    width: 20%;
+  }
+  h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);  
+  }
+  
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .path{
+    color:#dfdfe2;
+    text-decoration: none;
+  }
+  a:hover{
+    background-color: #dfdfe2;
+    color: #1b1b32;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  form{
+    width: 80%;
+    padding:10px auto 10px auto;
+    margin:auto;
+  }
+
+  .cssquestion{
+    margin: 10px auto 10px auto;
+  }
+
+  .ulcss li{
+    text-decoration: none;
+  }
+
+  .question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left:auto;
+    padding-right: auto;
+  }
+
+  .question-block2 {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+   
+  }
+
+  .label{
+    margin-left:7px;
+  }
+
+  #textarea{
+    width: 80%;
+    height: 200px;
+  }
+
+  section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
+
+  h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+
+  .info{
+    width: 100%;
+    padding: 10px auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #email,#name,#age{
+    width: 80%;
+    height: 1.5em;
+    padding-right:5px;
+    padding-bottom:2px;
+  }
+
+  .info label{
+    padding-bottom:5px;
+    padding-top:2px;
+  }
+ #textarea{
+    margin-left:-3px;
+    width: 100%;
+ }
+ button{
+    width: 40%;
+    height: 2.2em;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px auto 10px auto;
+    margin: 10px auto 10px auto;
+    display: block;
+ }
+
+ footer{
+    width: 100%;
+    background-color: #1b1b32;
+ }
+
+ .contacts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:5px auto 5px auto;
+    font-style: italic;
+    color: #dfdfe2;
+ }

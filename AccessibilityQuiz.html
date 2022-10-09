@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="stylesAQ.css" rel="stylesheet" />
+    <title>Accessibility Quiz</title>
+  </head>
+  <body>
+    <header>
+      <div class="space"></div>
+      <h1 class="title">Konstantin Chimev Quiz Project</h1>
+      <nav>
+        <ul>
+          <li><a href="#CSS" class="path">CSS section</a></li>
+          <li><a href="#HTML" class="path">HTML section</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="">
+        <section name="personalinfo">
+          <h2>Personal Information</h2>
+          <div class="info">
+            <label for="name">Name </label>
+            <input
+              type="text"
+              placeholder="e.g John Scott"
+              id="name"
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="email">Email </label>
+            <input
+              type="email"
+              placeholder="e.g j.scott@mail.com"
+              id="email"
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="age">Date of Birth </label>
+            <input type="date" id="age" required />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="CSS">
+          <h2 id="CSS">CSS Quiz</h2>
+          <fieldset class="question-block">
+            <legend class="cssquestion" name="CSS">
+              How would you link your CSS file to your HTML document?
+            </legend>
+            <ul class="ulcss">
+              <li>
+                <input type="radio" name="cssq" id="cssq1" value="true" />
+                <label for="cssq1"
+                  >With a "link" element containing a "href" and "rel"
+                  attributes.</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="cssq" id="cssq2" value="false" />
+                <label for="cssq2"
+                  >With an "anchor" element containing a "src" and "alt"
+                  attributes.</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="question-block2">
+            <legend class="cssquestion" name="CSS">
+              CSS is used to (select all that apply):
+            </legend>
+            <input type="checkbox" name="cssCheck1" value="true" /><label
+              for="cssCheck1"
+              class="label"
+            >
+              Designing the layout of your webpage.</label
+            >
+            <input type="checkbox" name="cssCheck2" value="false" /><label
+              for="cssCheck2"
+              class="label"
+            >
+              Create interaction between webpages and the user.</label
+            >
+            <input type="checkbox" name="cssCheck3" value="true" /><label
+              for="cssCheck3"
+              class="label"
+            >
+              Shape HTML elements.</label
+            >
+            <input type="checkbox" name="cssCheck4" value="true" /><label
+              for="cssCheck4"
+              class="label"
+            >
+              Give personality to your webpage.</label
+            >
+          </fieldset>
+        </section>
+        <section role="region" aria-labelledby="HTML">
+          <h2 id="HTML">HTML Quiz</h2>
+          <fieldset class="question-block">
+            <legend>
+              Write the code for an HTML document displaying your name in bold.
+            </legend>
+            <textarea
+              id="textarea"
+              rows="4"
+              cols="15"
+              placeholder="<!DOCTYPE html>
+<html>
+......"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+    <footer class="contacts">
+      <address>
+        <p>Konstantin Chimev</p>
+        <p>359898490580</p>
+        <p>Sofia</p>
+        <p>Bulgaria</p>
+      </address>
+    </footer>
+  </body>
+</html>
